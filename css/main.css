@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "light";
+  src: url("./assets/fonts/OpenSans-Light.woff2") format("woff2"), url("./assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "bold";
+  src: url("./assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("./assets/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "semibold";
+  src: url("./assets/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("./assets/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "medium";
+  src: url("./assets/fonts/OpenSans-Medium.woff2") format("woff2"), url("./assets/fonts/OpenSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=main.css.map */
