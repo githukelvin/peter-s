@@ -1,28 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+html, body {
+  color-scheme: light dark;
+  font-family: "light";
+  background: #2f3037;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
 @font-face {
   font-family: "light";
-  src: url("./assets/fonts/OpenSans-Light.woff2") format("woff2"), url("./assets/fonts/OpenSans-Light.woff") format("woff");
+  src: url("../assets/fonts/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "bold";
-  src: url("./assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("./assets/fonts/OpenSans-Bold.woff") format("woff");
-  font-weight: bold;
+  src: url("../assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("../assets/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "semibold";
-  src: url("./assets/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("./assets/fonts/OpenSans-SemiBold.woff") format("woff");
+  src: url("../assets/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../assets/fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "medium";
-  src: url("./assets/fonts/OpenSans-Medium.woff2") format("woff2"), url("./assets/fonts/OpenSans-Medium.woff") format("woff");
+  src: url("../assets/fonts/OpenSans-Medium.woff2") format("woff2"), url("../assets/fonts/OpenSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+#hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5em;
+  margin-bottom: 5em;
+}
+#hero .img {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+#hero .img .blob1 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to right, #ffc300, #00ffc8);
+  border-radius: 50%;
+}
+#hero .img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+  z-index: 21;
+  animation: imge 2s linear infinite;
+}
+#hero .text {
+  display: grid;
+  place-content: center;
+  gap: 2em;
+}
+#hero .text h1 {
+  font-family: "bold";
+  text-transform: uppercase;
+}
+#hero .text h4 {
+  color: #fff100;
+}
+#hero .text a {
+  color: #03ff89;
+  background: #20005e;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  font-family: "bold";
+}
+
+@keyframes imge {
+  0% {
+    transform: translateX(0);
+  }
+}
+@keyframes blob {
+  0% {
+    transform: translateX(0);
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.navbar .logo h1 {
+  font-family: "bold";
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #c0e916;
+}
+.navbar .nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.navbar .nav ul li a {
+  color: #73d707;
+  font-family: "semibold";
+  position: relative;
+}
+.navbar .nav ul li a:hover {
+  border-bottom: 2px solid #73d707;
+  transition: all 1s ease-out;
 }/*# sourceMappingURL=main.css.map */
