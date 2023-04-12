@@ -16,13 +16,29 @@ html, body {
   scroll-behavior: smooth;
 }
 
-p {
+p, li {
   color: #ccc;
   line-height: 1.5;
 }
 
+h1 {
+  color: #73d707;
+  font-family: "bold";
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+li span {
+  color: #73d707;
+}
+
 .container {
   max-width: 1440px;
+  margin-inline: auto;
+}
+
+.sect {
+  max-width: 900px;
   margin-inline: auto;
 }
 
@@ -54,6 +70,29 @@ p {
   font-style: normal;
   font-display: swap;
 }
+#about .career h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#about .career p {
+  width: 70%;
+  text-align: center;
+  margin-inline: auto;
+}
+
+#skills .proff {
+  position: relative;
+}
+#skills .proff h1 {
+  text-align: center;
+  position: relative;
+  margin-block: 2em;
+  font-size: 2.5em;
+}
+#skills .proff p {
+  margin-top: 3em;
+}
+
 #hero {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -63,10 +102,56 @@ p {
 #hero .img {
   display: flex;
   width: 600px;
-  height: 600px;
+  height: 660px;
   position: relative;
 }
-#hero .img .blob1 {
+#hero .img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+  z-index: 21;
+  animation: imge 2s alternate infinite;
+}
+#hero .text {
+  display: grid;
+  place-content: center;
+  gap: 2em;
+  z-index: 34;
+}
+#hero .text .blob2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  z-index: -1;
+  transform: translate(-40%, -75%);
+  background-image: linear-gradient(to right, #48cae4, #00ffc8);
+  border-radius: 50%;
+  animation: blob2 10s alternate infinite;
+}
+#hero .text h1 {
+  font-family: "bold";
+  text-transform: uppercase;
+}
+#hero .text a {
+  color: #03ff89;
+  background: #20005e;
+  width: fit-content;
+  border-radius: 20px;
+  display: flex;
+  gap: 0.8em;
+  padding: 1rem 2rem;
+  font-family: "bold";
+}
+#hero .text .profile {
+  display: flex;
+  position: relative;
+  z-index: 32;
+}
+
+.blob1 {
   width: 400px;
   height: 400px;
   position: absolute;
@@ -75,44 +160,28 @@ p {
   transform: translate(-50%, -50%);
   background-image: linear-gradient(to right, #ffc300, #00ffc8);
   border-radius: 50%;
-}
-#hero .img img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: contain;
-  z-index: 21;
-  animation: imge 2s linear infinite;
-}
-#hero .text {
-  display: grid;
-  place-content: center;
-  gap: 2em;
-}
-#hero .text h1 {
-  font-family: "bold";
-  text-transform: uppercase;
-}
-#hero .text h4 {
-  color: #fff100;
-}
-#hero .text a {
-  color: #03ff89;
-  background: #20005e;
-  width: fit-content;
-  border-radius: 20px;
-  padding: 1rem 2rem;
-  font-family: "bold";
+  animation: blob 5s alternate infinite;
 }
 
 @keyframes imge {
   0% {
-    transform: translateX(0);
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(30px);
   }
 }
 @keyframes blob {
   0% {
+    transform: translate(0);
+  }
+}
+@keyframes blob2 {
+  0% {
     transform: translateX(0);
+  }
+  100% {
+    transform: translateY(100px);
   }
 }
 .navbar {
