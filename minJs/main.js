@@ -1,2 +1,2 @@
-let btn=document.querySelector(".btn"),ham=document.querySelector(".ham");btn.addEventListener("click",(()=>{window.scrollTo({top:0,behavior:"smooth"})}));
+let btn=document.querySelector(".btn"),ham=document.querySelector(".ham"),ul=document.querySelector(".all");btn.addEventListener("click",(()=>{window.scrollTo({top:0,behavior:"smooth"})})),ham.addEventListener("click",(()=>{ul.classList.toggle("active"),ham.classList.toggle("active")}));
 //# sourceMappingURL=main.js.map

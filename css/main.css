@@ -508,8 +508,8 @@ li span {
 }
 
 .btn {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background: #00a7ef;
   position: fixed;
   top: 720px;
@@ -522,10 +522,10 @@ li span {
 }
 @media (max-width: 375px) {
   .btn {
-    left: 100px;
+    top: 640px;
   }
 }
-.btn i {
+.btn svg {
   font-size: 2.2em;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
