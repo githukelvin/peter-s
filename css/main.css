@@ -340,6 +340,11 @@ li span {
   height: 660px;
   position: relative;
 }
+@media (max-width: 850px) {
+  #hero .img {
+    width: 100%;
+  }
+}
 @media (max-width: 375px) {
   #hero .img {
     width: 100%;
@@ -389,7 +394,7 @@ li span {
 @media (max-width: 850px) {
   #hero .text .blob2 {
     top: 140%;
-    left: 50%;
+    left: 30%;
   }
 }
 #hero .text h1 {
@@ -416,12 +421,18 @@ li span {
   width: 400px;
   height: 400px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 30%;
+  transform: translate(-30%, -30%);
   background-image: linear-gradient(to right, #ffc300, #00ffc8);
   border-radius: 50%;
   animation: blob 5s alternate infinite;
+}
+@media (max-width: 850px) {
+  .blob1 {
+    left: 30%;
+    top: 30%;
+  }
 }
 
 @keyframes imge {
@@ -447,6 +458,7 @@ li span {
 }
 .navbar {
   display: flex;
+  overflow-x: hidden;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 2rem;
@@ -461,6 +473,7 @@ li span {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-image: url("../assets/images/bars-solid.svg");
   display: none;
@@ -489,8 +502,9 @@ li span {
     width: 200px;
     height: 50dvh;
     padding: 3em 0 0 2em;
-    transform: translateX(130%);
+    transform: translateX(-230%);
     transition: transform 1s ease-in;
+    overflow-x: hidden;
   }
   .navbar .nav ul.active {
     transition: transform 2s ease-in;
@@ -501,6 +515,7 @@ li span {
   color: #73d707;
   font-family: "semibold";
   position: relative;
+  text-transform: uppercase;
 }
 @media (max-width: 375px) {
   .navbar .nav ul li a {
@@ -517,7 +532,7 @@ li span {
   height: 40px;
   background: #00a7ef;
   position: fixed;
-  top: 720px;
+  bottom: 0;
   display: grid;
   place-items: center;
   left: 50%;
@@ -527,6 +542,7 @@ li span {
 }
 @media (max-width: 375px) {
   .btn {
+    position: fixed;
     top: 640px;
   }
 }
