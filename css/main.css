@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  list-style: none;
   border: none;
   overflow-x: hidden;
   outline: none;
@@ -271,6 +270,11 @@ li span {
 #projects .work .responsibilites ul li {
   margin-bottom: 0.5em;
   list-style-type: square;
+}
+@media (max-width: 375px) {
+  #projects .work .responsibilites ul li {
+    list-style-type: square;
+  }
 }
 
 #skills .proff {
