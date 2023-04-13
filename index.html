@@ -9,34 +9,39 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/f1deb10f83.js" crossorigin="anonymous"></script>
     <!-- fonts  -->
-    <link rel="preload" href="./assets/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./assets/fonts/OpenSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./assets/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/OpenSans-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body>
     <!-- header -->
     <header>
         <div class="container">
            <div class="navbar">
-            <div class="logo">
-                <h1>Peter</h1>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#education">education</a></li>
-                </ul>
-            </div>
+                <div class="logo">
+                    <h1>Peter</h1>
+                </div>
+                <div class="nav">
+                    <ul class="all">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#education">education</a></li>
+                    </ul>
+                </div>
+                <div class="ham">
+                </div>
            </div>
         </div>
     </header>
 
     <!-- main -->
     <main>
+        <button class="btn">
+            <i class="fa-solid fa-arrow-up fa-beat-fade"></i>
+        </button>
         <div class="container">
             <section id="hero">
                     <div class="img">
@@ -61,7 +66,7 @@
                         </div>
                     </div>
             </section>
-            <section class="sect" id="about">
+            <section  class="sect" id="about">
                 <div class="career">
                     <h1>CAREER OBJECTIVE</h1>
                     <p>Personable IT technical Specialist with 3+ years expertise, majoring on hardware and software and system
@@ -195,25 +200,27 @@
             </section>
             <section class="sect" id="education">
                 <h1>education</h1>
-                <div class="edu">
-                    <h3>Bachelor of
-                    Science in Information technology</h3>
-                    <p>Karatina University</p>
-                    <p>2015 - 2020</p>
-                    <div class="skills">
-                        <h4>Key Skills</h4>
-                        <ul>
-                            <li>Software Troubleshooting & Problem Solving.</li>
-                            <li>IT Skills</li>
-                            <li>Communication & Interpersonal Skills</li>
-                            <li>Creative Thinking Skills</li>
-                        </ul>
+                <div class="second">
+                    <div class="edu">
+                        <h3>Bachelor of
+                            Science in Information technology</h3>
+                        <p>Karatina University</p>
+                        <p>2015 - 2020</p>
+                        <div class="skills">
+                            <h4>Key Skills</h4>
+                            <ul>
+                                <li>Software Troubleshooting & Problem Solving.</li>
+                                <li>IT Skills</li>
+                                <li>Communication & Interpersonal Skills</li>
+                                <li>Creative Thinking Skills</li>
+                            </ul>
+                        </div>
+                    
                     </div>
-
-                </div>
-                <div class="edu">
-                    <h3>Nyahururu High School (KCSE)</h3>
-                    <p>2011-2014 Grade B 66points</p>
+                    <div class="edu">
+                        <h3>Nyahururu High School (KCSE)</h3>
+                        <p>2011-2014 Grade B 66points</p>
+                    </div>
                 </div>
                 <div class="certfications">
                     <h1>certfications</h1>
@@ -227,6 +234,7 @@
             </section>
             
             <section class="sect" id="contact">
+                <h1>CONTACT</h1>
                 <div class="details">
                     <div class="detail">
                         <h3><i class="fa-solid fa-house fa-bounce"></i>Residence</h3>
@@ -246,37 +254,41 @@
                     </div>
                 </div>
                 <div class="referees">
+                    <h2>REFEREES</h2>
+                   <div class="all">
                     <div class="referee">
-                        <p>Mr.Charles Ndung’u</p>
+                        <p class="name">Mr.Charles Ndung’u</p>
                         <p>Topaz driving and Computer college</p>
                         <p>Tel. 0705829897</p>
                     </div>
                     <div class="referee">
-                        <p>Madam Wangechi</p>
+                        <p class="name">Madam Wangechi</p>
                         <p>H.o.d ICT </p>
                         <p>Tel. +254725686803</p>
                     </div>
                     <div class="referee">
-                        <p>Mr. Goddifrey
-                        Mbudo</p>
+                        <p class="name">Mr. Goddifrey
+                            Mbudo</p>
                         <p>Premier Professional Institute</p>
                         <p>Tel. 0712821795</p>
                     </div>
                     <div class="referee">
-                        <p>James Karugu</p>
+                        <p class="name">James Karugu</p>
                         <p>CTO,<a href="zandaux.com">zandaux.com</a></p>
-                         <p>Tel. 0790788769</p>
+                        <p>Tel. 0790788769</p>
                     </div>
                     <div class="referee">
-                        <p>Mr. Edwin Rono</p>
+                        <p class="name">Mr. Edwin Rono</p>
                         <p>Sales manager,<a href="zandaux.com">zandaux.com</a></p>
                         <p>Tel. 0725563537</p>
                     </div>
+                   </div>
                 </div>
             </section>
         </div>
     
-    </main>
-    
+    </main> 
+  
 </body>
+<script src="./minJs/main.js"></script>
 </html>

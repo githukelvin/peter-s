@@ -1,1 +1,1 @@
-{"version":3,"file":"main.js","names":[],"sources":[],"mappings":""}
+{"version":3,"file":"main.js","names":["btn","document","querySelector","ham","addEventListener","window","scrollTo","top","behavior"],"sources":["main.js"],"mappings":"AAAA,IAAIA,IAAMC,SAASC,cAAc,QAC7BC,IAAMF,SAASC,cAAc,QAEjCF,IAAII,iBAAiB,SAAS,KACzBC,OAAOC,SAAS,CACdC,IAAK,EACLC,SAAU,UACV"}
